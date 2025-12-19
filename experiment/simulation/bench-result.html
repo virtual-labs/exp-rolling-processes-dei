@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Result - Rolling Process</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Simulation Results</h3>
+                <p class="nav-description">View your configured simulation</p>
+            </div>
+            
+            <div class="nav-section">
+                <h4 class="nav-subtitle">Parameters:</h4>
+                <div class="param-display" id="sidebar-params">
+                    <!-- Populated by JavaScript -->
+                </div>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='bench-setup.html'">← Back to Parameters</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process - Simulation Results</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Simulation Output</h1>
+        <div class="content-box">
+            <!-- Video Player -->
+            <div class="video-container">
+                <video id="simulation-video" controls autoplay loop>
+                    <source id="video-source" src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <!-- Description -->
+            <div id="simulation-description" class="simulation-description">
+                <!-- Populated by JavaScript -->
+            </div>
+            
+            <!-- Parameters Summary Table -->
+            <h3>Simulation Parameters:</h3>
+            <table class="params-table">
+                <tr>
+                    <td class="param-key">Material Type:</td>
+                    <td class="param-value" id="param-material">-</td>
+                </tr>
+                <tr>
+                    <td class="param-key">Coefficient of Friction:</td>
+                    <td class="param-value" id="param-friction">-</td>
+                </tr>
+                <tr>
+                    <td class="param-key">Rolling Velocity:</td>
+                    <td class="param-value" id="param-velocity">-</td>
+                </tr>
+                <tr>
+                    <td class="param-key">Temperature Condition:</td>
+                    <td class="param-value" id="param-temperature">-</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script>
+        // Load simulation parameters from localStorage
+        document.addEventListener('DOMContentLoaded', function() {
+            const params = localStorage.getItem('simulationParams');
+            
+            if (!params) {
+                alert('No simulation parameters found. Redirecting to setup page.');
+                window.location.href = 'bench-setup.html';
+                return;
+            }
+            
+            const simData = JSON.parse(params);
+            
+            // Set video source
+            const videoSource = document.getElementById('video-source');
+            const video = document.getElementById('simulation-video');
+            videoSource.src = simData.videoPath;
+            video.load();
+            
+            // Set description
+            document.getElementById('simulation-description').innerHTML = `<p>${simData.description}</p>`;
+            
+            // Set parameters in table
+            document.getElementById('param-material').textContent = simData.material;
+            document.getElementById('param-friction').textContent = simData.friction;
+            document.getElementById('param-velocity').textContent = simData.velocity;
+            document.getElementById('param-temperature').textContent = simData.temperature;
+            
+            // Set sidebar parameters
+            const sidebarParams = document.getElementById('sidebar-params');
+            sidebarParams.innerHTML = `
+                <div class="sidebar-param-item"><strong>Material:</strong> ${simData.material}</div>
+                <div class="sidebar-param-item"><strong>Friction:</strong> ${simData.friction}</div>
+                <div class="sidebar-param-item"><strong>Velocity:</strong> ${simData.velocity}</div>
+                <div class="sidebar-param-item"><strong>Temp:</strong> ${simData.temperature}</div>
+            `;
+        });
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

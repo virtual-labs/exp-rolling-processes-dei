@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulation - Rolling Process</title>
+    <title>Applications - Rolling Process</title>
     <link rel="stylesheet" href="./css/main.css">
+    <style>
+        .blurred-background {
+            filter: blur(5px);
+            pointer-events: none;
+        }
+    </style>
 </head>
 <body class="home-page">
-    <!-- Home Page Container -->
-    <div class="home-container">
+    <!-- Home Page Container (Blurred Background) -->
+    <div class="home-container blurred-background">
         <div class="home-header">
             <img src="images/deiLogo.jpg" alt="DEI Logo" class="home-logo" />
             <div class="home-header-text">
@@ -21,7 +27,7 @@
         <p class="home-subtitle">Choose your learning pathway</p>
         
         <div class="mode-cards">
-            <div class="mode-card" onclick="selectMode('bench')">
+            <div class="mode-card">
                 <div class="card-icon">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -40,7 +46,7 @@
                 </div>
             </div>
             
-            <div class="mode-card" onclick="window.location.href='applications-selection.html'">
+            <div class="mode-card">
                 <div class="card-icon">
                     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -58,8 +64,8 @@
         </div>
     </div>
     
-    <!-- Applications Modal -->
-    <div id="applications-modal" class="modal-overlay" style="display: none;">
+    <!-- Applications Modal Overlay -->
+    <div id="applications-modal" class="modal-overlay" style="display: flex;">
         <div class="modal-content">
             <h2 class="modal-title">Rolling Applications</h2>
             <p class="modal-description">Select an application category to explore</p>
@@ -81,7 +87,7 @@
                     <p>Creation of seamless pipes without welding</p>
                 </button>
             </div>
-            <button class="modal-close-btn" onclick="closeApplicationsModal()">Close</button>
+            <button class="modal-close-btn" onclick="window.location.href='index.html'">Close</button>
         </div>
     </div>
 

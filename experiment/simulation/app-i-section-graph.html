@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-Section with Graph - Applications</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">I-Section</h3>
+                <ul class="nav-list">
+                    <li><a href="app-i-section.html" class="nav-link">I-Section with 2-Roller</a></li>
+                    <li><a href="app-i-section-4roller.html" class="nav-link">I-Section with 4-Roller</a></li>
+                    <li><a href="app-i-section-graph.html" class="nav-link active">I-Section with Graph</a></li>
+                </ul>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='applications-selection.html'">← Back to Selection</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process Applications</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">I-Section with Graph</h1>
+        <div class="content-box">
+            <div class="video-container">
+                <video controls loop>
+                    <source src="ROLLING/Applications/ISectionGraph.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <p>The video shows the continuous manufacturing of I-Beam using rolling process. The material of the billet is manganese alloy steel. Due to high deforming force and high billet temperature, material starts deforming plastically.</p>
+            
+            <p>Right hand side of video shows variation of forces on rollers and pilot height. right upper hand side shows initial and final billet. maximum stresses develop at the point of contact of roller and billet. On the top left hand corner a scale is provided for determining the equivalent strain generated during the process.</p>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

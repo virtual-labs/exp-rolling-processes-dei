@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Plate Rolling - Applications</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Flat Plate Rolling</h3>
+                <ul class="nav-list">
+                    <li><a href="app-flat-plate.html" class="nav-link active">Flat Plate</a></li>
+                    <li><a href="app-flat-plate-closeup.html" class="nav-link">Close-up View</a></li>
+                </ul>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='applications-selection.html'">← Back to Selection</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process Applications</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Flat Plate Rolling</h1>
+        <div class="content-box">
+            <div class="video-container">
+                <video controls loop>
+                    <source src="ROLLING/Applications/roll_2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <p>In the video, one can observe Rolling Process for commercially used copper sheet of length, breadth and thickness of 100mm, 50 mm and 10 mm. On the right side, one can view the process of rolling reducing the thickness of sheet to half.</p>
+            
+            <p>The upper roller is revolving anti clockwise and the lower roller revolving anticlockwise when the sheet is moving to right. The different contours in shear zone indicates the equivalent strain generated in the shear zone in sheet during rolling operation.</p>
+            
+            <p>On the left hand top end, the rolling simulation shows the deformation in sheet and the equivalent strains generated in the sheet can be compared with the scale shown on the extreme left.</p>
+            
+            <p>On the left hand bottom end, the rolling simulation shows the deformation in sheet and the meshing with different contours.</p>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

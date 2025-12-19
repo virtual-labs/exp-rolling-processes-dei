@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flat Plate Rolling Close-up - Applications</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Flat Plate Rolling</h3>
+                <ul class="nav-list">
+                    <li><a href="app-flat-plate.html" class="nav-link">Flat Plate</a></li>
+                    <li><a href="app-flat-plate-closeup.html" class="nav-link active">Close-up View</a></li>
+                </ul>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='applications-selection.html'">← Back to Selection</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process Applications</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Flat Plate Rolling - Close-up View</h1>
+        <div class="content-box">
+            <div class="video-container">
+                <video controls loop>
+                    <source src="ROLLING/Applications/roll_3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <p>In the video, one can observe Rolling Process for Aluminium sheet. The rollers having mesh and are reducing the sheet thickness. The coloured contours over the sheet describe the equivalent strains generated over the sheet which can be compared with the scale on the left side.</p>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

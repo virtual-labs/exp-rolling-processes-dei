@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle Rolling - Applications</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Angle Rolling</h3>
+                <ul class="nav-list">
+                    <li><a href="app-angle-rolling.html" class="nav-link active">Angle Rolling</a></li>
+                    <li><a href="app-angle-rolling-graph.html" class="nav-link">Angle Rolling with Graph</a></li>
+                    <li><a href="app-angle-bar.html" class="nav-link">Angle Bar Rolling</a></li>
+                    <li><a href="app-circular-bar.html" class="nav-link">Circular Bar Rolling</a></li>
+                </ul>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='applications-selection.html'">← Back to Selection</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process Applications</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Angle Rolling</h1>
+        <div class="content-box">
+            <div class="video-container">
+                <video controls loop>
+                    <source src="ROLLING/Applications/AngleRolling.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <p>Angle rolling is formed by rolling operation. In a given simulation of angle rolling, hot rolling process is used. Considering the various parameters of rolling simulation. The material of the billet (sheet) is plane carbon steel and the temperature of the billet is high.</p>
+            
+            <p>In the simulation video the billet is infinite elements to have better analysis of the force. The rolling press is used. In the left handside of the simulation video we can see the manufacturing of angle rolling.</p>
+            
+            <p>And in the right hand top side of the video we can see the plain sheet and final final sheet. The right hand bottom side of the video we can see the variation of strain in the billet during the rolling operation.</p>
+            
+            <p>Initially the strain in the billet is zero while during the operation the strain rises due to deformation. It rises up to 6.4806 greater strain indicates more deformation, more grain refinement and hence better mechanical properties.</p>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

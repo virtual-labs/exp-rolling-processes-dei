@@ -45,39 +45,49 @@ d) Lubrication is, in general, easier.
 
 The stock is returned to the entrance for further reduction.
 
-![Figure 1: Two-high mill, pullover](images/rolling/Figure%201.jpg)
+ <div class="image-container ">
+                    <img src="Rolling/Figure 1.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label">Figure 1: Two-high mill, pullover</div>
+                </div>
 
-**Figure 1: Two-high mill, pullover**
+
 
 ### TWO-HIGH MILL, REVERSING
 
 The work can be passed back and forth through the rolls by reversing their direction of rotation.
 
-![Figure 2: Two-high mill, reversing](images/rolling/Figure%202.jpg)
-
-**Figure 2: Two-high mill, reversing**
+<div class="image-container">
+                    <img src="Rolling/Figure 2.jpg" alt="Two-high mill, reversing">
+                    <div class="image-label">Figure 2: Two-high mill, reversing</div>
+                </div>
 
 ### THREE-HIGH MILL
 
 Consist of upper and lower driven rolls and a middle roll, which rotates by friction.
 
-![Figure 3: Three-high mill](images/rolling/Figure%203.jpg)
+<div class="image-container">
+                    <img src="Rolling/Figure 3.jpg" alt="Three-high mill">
+                    <div class="image-label">Figure 3: Three-high mill</div>
+                </div>
 
-**Figure 3: Three-high mill**
 
 ### FOUR-HIGH MILL
 
 Small-diameter rolls (less strength & rigidity) are supported by larger-diameter backup rolls.
 
-![Figure 4: Four-high mill](images/rolling/Four-high%20mill.jpg)
-
-**Figure 4: Four-high mill**
+<div class="image-container">
+                    <img src="Rolling/Four-high mill.jpg" alt="Four-high mill">
+                    <div class="image-label">Figure 4: Four-high mill</div>
+                </div>
 
 ### CLUSTER MILL OR SENDZIMIR MILL
 
 Each of the work rolls is supported by two backing rolls.
 
-![Figure 5: Cluster mill or sendzimir mill](images/rolling/Cluster%20mill%20or%20sendzimir%20mill.jpg)
+<div class="image-container">
+                    <img src="Rolling/Cluster mill or sendzimir mill.jpg" alt="Cluster mill or sendzimir mill">
+                    <div class="image-label">Figure 5: Cluster mill or sendzimir mill</div>
+                </div>
 
 **Figure 5: Cluster mill or sendzimir mill**
 
@@ -103,9 +113,10 @@ Consist of a pair of heavy backing rolls surrounded by a large number of planeta
 - Therefore, the planetary mill can hot reduces a slab directly to strip in one pass through the mill.
 - The operation requires feed rolls to introduce the slab into the mill, and a pair of planishing rolls on the exit to improve the surface finish.
 
-![Figure 6: Typical arrangement of rollers for rolling mill](images/rolling/Typical%20arrangement%20of%20rollers%20for%20rolling%20mill.jpg)
-
-**Figure 6: Typical arrangement of rollers for rolling mill**
+<div class="image-container">
+                    <img src="Rolling/Typical arrangement of rollers for rolling mill.jpg" alt="Typical arrangement of rollers for rolling mill">
+                    <div class="image-label">Figure 6: Typical arrangement of rollers for rolling mill</div>
+                </div>
 
 ---
 
@@ -138,17 +149,21 @@ The objective is to decrease the thickness of the metal with an increase in leng
 - Heated bar is cropped to length and fed in transversely between rolls.
 - Rolls are revolved in one direction.
 
-![Figure 7: Transverse rolling](images/rolling/Transverse%20rolling.jpg)
+<div class="image-container">
+                    <img src="Rolling/Transverse rolling.jpg" alt="Transverse rolling">
+                    <div class="image-label">Figure 7: Transverse rolling</div>
+                </div>
 
-**Figure 7: Transverse rolling**
+
 
 ---
 
 ## SHAPED ROLLING OR SECTION ROLLING
 
-![Figure 8: Shaped rolling](images/rolling/Shaped%20rolling.jpg)
-
-**Figure 8: Shaped rolling**
+ <div class="image-container">
+                    <img src="Rolling/Shaped rolling.jpg" alt="Shaped rolling">
+                    <div class="image-label">Figure 8: Shaped rolling</div>
+                </div>
 
 - A special type of cold rolling in which flat slab is progressively bent into complex shapes by passing it through a series of driven rolls.
 - No appreciable change in the thickness of the metal during this process.
@@ -168,8 +183,10 @@ The objective is to decrease the thickness of the metal with an increase in leng
 6. The metal only extends in the rolling direction and no extension in the width of the material.
 7. The cross sectional area normal to the rolling direction is not distorted.
 
-![Assumptions](images/Rolling/ASSUMPTIONS.jpg)
-
+  <div class="image-container">
+                    <img src="Rolling\ASSUMPTIONS.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 ---
 
 ## FORCES AND GEOMETRICAL RELATIONSHIPS IN ROLLING
@@ -179,7 +196,10 @@ The objective is to decrease the thickness of the metal with an increase in leng
 - Given that there is no increase in width, the vertical compression of the metal is translated into an elongation in the rolling direction.
 - Since there is no change in metal volume at a given point per unit time throughout the process, therefore
 
-![Geometrical Relationships](images/Rolling/GEOMETRICAL.jpg)
+ <div class="image-container">
+                    <img src="Rolling\GEOMETRICAL.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 
 ### Volume Conservation
 
@@ -211,8 +231,10 @@ The velocity of the sheet must steadily increase from entrance to exit such that
 - Between the entrance plane(xx) and the neutral point the sheet is moving slower than the roll surface, and the tangential frictional force, F, act in the direction (see fig.) to draw the metal into the roll.
 - On the exit side(yy) of the neutral point, the sheet moves faster than the roll surface. The direction of the frictional force is then reversed and oppose the delivery of the sheet from the rolls.
 
-![Tangential Frictional Force](images/Rolling/a%20tangential%20frictional%20force.jpg)
-
+<div class="image-container">
+                    <img src="Rolling\a tangential frictional force.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 ### Specific Roll Pressure
 
 P_r is the radial force, with a vertical component P (rolling load - the load with which the rolls press against the metal).
@@ -223,7 +245,10 @@ The specific roll pressure, p, is the rolling load divided by the contact area.
 
 where b is the width of the sheet.
 
-![Roll Pressure](images/Rolling/r13.jpg)
+<div class="image-container">
+                    <img src="Rolling\r13.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 
 L_p is the projected length of the arc of the contact
 
@@ -237,9 +262,14 @@ L_p is the projected length of the arc of the contact
 - The area in shade represent the force required to overcome frictional forces between the roll and the sheet.
 - The area under the dashed line AB represents the force required to deform the metal in plane homogeneous compression.
 
-![Pressure Distribution 1](images/Rolling/r14.jpg)
-
-![Pressure Distribution 2](images/Rolling/r15.jpg)
+ <div class="image-container">
+                    <img src="Rolling\r14.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
+                <div class="image-container">
+                    <img src="Rolling\r15.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 
 ---
 
@@ -251,7 +281,10 @@ For the work piece to enter the throat of the roll, the component of the frictio
 
 **F/P_r ≥ sin α / cos α ≥ tan α**
 
-![Roll Bite Condition](images/Rolling/r16.jpg)
+<div class="image-container">
+                    <img src="Rolling\r16.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 
 But we know that:
 
@@ -265,7 +298,10 @@ F = μP_r
 - If μ = 0, rolling cannot occur.
 - **Therefore Free engagement will occur when μ > tan α**
 
-![Free Engagement](images/Rolling/r17.jpg)
+ <div class="image-container">
+                    <img src="Rolling\r17.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 
 ---
 
@@ -273,7 +309,10 @@ F = μP_r
 
 From triangle ABC, we have:
 
-![Maximum Reduction](images/Rolling/r18.jpg)
+<div class="image-container">
+                    <img src="Rolling\r18.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 
 **R² = L_p² + (R - a)²**
 
@@ -313,8 +352,10 @@ The total rolling load is distributed over the arc of contact in the typical fri
 
 where λ is 0.5 for hot-rolling and 0.45 for cold rolling.
 
-![Torque Diagram](images/Rolling/r19.jpg)
-
+<div class="image-container">
+                    <img src="Rolling\r19.jpg" alt="Two-high mill, pullover">
+                    <div class="image-label"></div>
+                </div>
 ### Torque Calculation
 
 The torque M_T is equal to the total rolling load P multiplied by the effective moment arm a. Since there are two rolls, the torque is given by:

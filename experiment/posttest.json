@@ -2,38 +2,84 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "In order to get uniform thickness of plate by rolling process, one provides:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Chamber on rolls",
+        "b": "Hardening of the rolls",
+        "c": "Offset on the rolls",
+        "d": "Anti-friction bearing"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Camber compensates roll deflection.",
+        "b": "Hardening improves life, not thickness control.",
+        "c": "Offset does not ensure uniform thickness.",
+        "d": "Bearings reduce friction only."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "a"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The property of a material by which it can be rolled into sheets is called:",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Elasticity",
+        "b": "Plasticity",
+        "c": "Ductility",
+        "d": "Malleability"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Elasticity refers to recovery.",
+        "b": "Plasticity is general deformation ability.",
+        "c": "Ductility refers to wire drawing.",
+        "d": "Malleability enables sheet formation."
       },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
+      "correctAnswer": "d"
+    },
+    {
+      "question": "Hot rolling of mild steel is carried out:",
+      "answers": {
+        "a": "At Re-crystallisation Temperature",
+        "b": "Between 100oC and 150oC",
+        "c": "Above Re-crystallisation Remperature",
+        "d": "Below Re-crystallisation Temperature"
+      },
+      "explanations": {
+        "a": "Hot rolling requires temperature above recrystallization.",
+        "b": "Temperature is too low.",
+        "c": "Correct condition for hot rolling.",
+        "d": "Below recrystallization corresponds to cold rolling."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "The number of steps involved in making a rod from a 100 mm × 100 mm billet are:",
+      "answers": {
+        "a": "1",
+        "b": "4",
+        "c": "6",
+        "d": "10"
+      },
+      "explanations": {
+        "a": "Single pass is insufficient.",
+        "b": "Reduction requires multiple steps.",
+        "c": "Six steps are typically required.",
+        "d": "Too many steps."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "In metals subjected to cold working, strain hardening effect is due to the mechanism of:",
+      "answers": {
+        "a": "Slip",
+        "b": "Twinning",
+        "c": "Dislocation",
+        "d": "Fracture"
+      },
+      "explanations": {
+        "a": "Slip causes plastic deformation.",
+        "b": "Twinning occurs under specific conditions.",
+        "c": "Dislocation accumulation causes strain hardening.",
+        "d": "Fracture is failure."
+      },
+      "correctAnswer": "c"
     }
   ]
 }

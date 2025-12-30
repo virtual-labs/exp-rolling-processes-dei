@@ -48,7 +48,9 @@ The stock is returned to the entrance for further reduction.
 
 
 <center>
-<img src="Rolling/Figure 1.jpg" alt="Tube Swaging" style="max-width: 100%; height: auto;"><br>
+
+<img src="Rolling/Figure 1.jpg" height="275" width="350">
+<b>Figure 2: Two-high mill, Pullover </b><br><br>
 
 </center>
 
@@ -59,7 +61,7 @@ The work can be passed back and forth through the rolls by reversing their direc
 
 
 <center>
-<img src="Rolling/Figure 2.jpg" alt="Tube Swaging" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Figure 2.jpg" alt="Tube Swaging" height="275" width="350"><br>
 <b>Figure 2: Two-high mill, reversing</b><br><br>
 </center>
 
@@ -70,7 +72,7 @@ Consist of upper and lower driven rolls and a middle roll, which rotates by fric
 
 
 <center>
-<img src="Rolling/Figure 3.jpg" alt="Tube Swaging" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Figure 3.jpg" height="275" width="350"><br>
 <b>Figure 3: Three-high mill</b><br><br>
 </center>
 
@@ -81,7 +83,7 @@ Small-diameter rolls (less strength & rigidity) are supported by larger-diameter
 
 
 <center>
-<img src="Rolling/Four-high mill.jpg" alt="Tube Swaging" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Four-high mill.jpg" height="275" width="350""><br>
 <b>Figure 4: Four-high mill</b><br><br>
 </center>
 
@@ -91,7 +93,7 @@ Each of the work rolls is supported by two backing rolls.
 
 
 <center>
-<img src="Rolling/Cluster mill or sendzimir mill.jpg" alt="Tube Swaging" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Cluster mill or sendzimir mill.jpg" height="300" width="350"><br>
 <b>Figure 5: Cluster mill or sendzimir mill</b><br><br>
 </center>
 
@@ -122,7 +124,7 @@ Consist of a pair of heavy backing rolls surrounded by a large number of planeta
 
 
 <center>
-<img src="Rolling/Typical arrangement of rollers for rolling mill.jpg" alt="Typical arrangement of rollers for rolling mill" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Typical arrangement of rollers for rolling mill.jpg" height="275" width="350"><br>
 <b>Figure 6: Typical arrangement of rollers for rolling mill</b><br><br>
 </center>
 
@@ -160,7 +162,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 
 <center>
-<img src="Rolling/Transverse rolling.jpg" alt="Transverse rolling" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Transverse rolling.jpg" alt="Transverse rolling"  height="275" width="275">><br>
 <b>Figure 7: Transverse rolling</b><br><br>
 </center>
 
@@ -170,7 +172,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 
   <center>
-<img src="Rolling/Shaped rolling.jpg" alt="Shaped rolling" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling/Shaped rolling.jpg" alt="Shaped rolling" height="275" width="225"><br>
 <b>Figure 8: Shaped rolling</b><br><br>
 </center>
 
@@ -194,7 +196,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
   
 <center>
-<img src="Rolling\ASSUMPTIONS.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\ASSUMPTIONS.jpg" alt="Two-high mill, pullover" height="275" width="375"><br>
 
 </center>
 
@@ -207,7 +209,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 
 <center>
-<img src="Rolling\GEOMETRICAL.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\GEOMETRICAL.jpg" alt="Two-high mill, pullover" height="175" width="350"><br>
 
 </center>
 ### Volume Conservation
@@ -242,7 +244,7 @@ The velocity of the sheet must steadily increase from entrance to exit such that
 
 
 <center>
-<img src="Rolling\a tangential frictional force.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\a tangential frictional force.jpg" alt="Two-high mill, pullover" height="300" width="450"><br>
 
 </center>
 
@@ -259,7 +261,7 @@ where b is the width of the sheet.
 
 
 <center>
-<img src="Rolling\r13.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\r13.jpg" alt="Two-high mill, pullover" height="400" width="400"><br>
 
 </center>
 
@@ -276,11 +278,11 @@ L_p is the projected length of the arc of the contact
 - The area under the dashed line AB represents the force required to deform the metal in plane homogeneous compression.
 
  <div class="image-container">
-                    <img src="Rolling\r14.jpg" alt="Two-high mill, pullover">
+                    <img src="Rolling\r14.jpg" alt="Two-high mill, pullover" height="300" width="400">
                     <div class="image-label"></div>
                 </div>
                 <div class="image-container">
-                    <img src="Rolling\r15.jpg" alt="Two-high mill, pullover">
+                    <img src="Rolling\r15.jpg" alt="Two-high mill, pullover" height="250" width="200">
                     <div class="image-label"></div>
                 </div>
 
@@ -297,7 +299,7 @@ For the work piece to enter the throat of the roll, the component of the frictio
 
 
 <center>
-<img src="Rolling\r16.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\r16.jpg" alt="Two-high mill, pullover" height="250" width="375"><br>
 
 </center>
 
@@ -316,7 +318,7 @@ F = μP_r
 
 
 <center>
-<img src="Rolling\r17.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\r17.jpg" alt="Two-high mill, pullover" height="400" width="600"><br>
 
 </center>
 
@@ -327,7 +329,7 @@ From triangle ABC, we have:
 
 
 <center>
-<img src="Rolling\r18.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\r18.jpg" alt="Two-high mill, pullover" height="300" width="400"><br>
 
 </center>
 
@@ -373,7 +375,7 @@ where λ is 0.5 for hot-rolling and 0.45 for cold rolling.
 
 
 <center>
-<img src="Rolling\r19.jpg" alt="Two-high mill, pullover" style="max-width: 100%; height: auto;"><br>
+<img src="Rolling\r19.jpg" alt="Two-high mill, pullover" height="300" width="350"><br>
 >
 </center>
            

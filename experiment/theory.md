@@ -1,4 +1,4 @@
-###Theory
+### Theory
 
 It is the process of plastically deforming metal by passing it between rolls. Rolling may be defined as the reduction of the cross-sectional area of the metal stock, or the general shaping of the metal products, through the use of the rotating rolls. It allows a high degree of closed-loop automation and very high speeds, and is thus capable of providing high-quality, close tolerance starting material for various secondary sheet metal working processes at a low cost.
 
@@ -8,7 +8,7 @@ It is the process of plastically deforming metal by passing it between rolls. Ro
 ---
 
 
-###Introduction - Hot and Cold Rolling Processes
+### Introduction - Hot and Cold Rolling Processes
 
 ### Hot Rolling
 

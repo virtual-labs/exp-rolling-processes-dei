@@ -48,9 +48,8 @@ The stock is returned to the entrance for further reduction.
 
 <center>
 
-<img src="Rolling/Figure 1.jpg" height="275" width="350">
+<img src="Rolling/Figure 1.jpg" alt="Tube Swaging" height="275" width="350"><br>
 <b>Figure 2: Two-high mill, Pullover </b><br><br>
-
 </center>
 
 ### TWO-HIGH MILL, REVERSING
@@ -61,7 +60,7 @@ The work can be passed back and forth through the rolls by reversing their direc
 
 <center>
 <img src="Rolling/Figure 2.jpg" alt="Tube Swaging" height="275" width="350"><br>
-<b>Figure 2: Two-high mill, reversing</b><br><br>
+<b>Figure 3: Two-high mill, reversing</b><br><br>
 </center>
 
 ### THREE-HIGH MILL

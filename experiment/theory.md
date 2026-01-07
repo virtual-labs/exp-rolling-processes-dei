@@ -1,6 +1,4 @@
-# Rolling Process
-
-## Overview
+<h3>Theory</h3>
 
 It is the process of plastically deforming metal by passing it between rolls. Rolling may be defined as the reduction of the cross-sectional area of the metal stock, or the general shaping of the metal products, through the use of the rotating rolls. It allows a high degree of closed-loop automation and very high speeds, and is thus capable of providing high-quality, close tolerance starting material for various secondary sheet metal working processes at a low cost.
 
@@ -9,8 +7,10 @@ It is the process of plastically deforming metal by passing it between rolls. Ro
 
 ---
 
-## Introduction - Hot and Cold Rolling Processes
 
+<h4>
+  Introduction - Hot and Cold Rolling Processes
+</h4>
 ### Hot Rolling
 
 The initial breakdown of ingots into blooms and billets is generally done by hot-rolling. This is followed by further hot rolling into plate, sheet, rod, bar, pipe, rail. The distinctive mark of hot rolling is not a crystallized structure, but the simultaneous occurrence of dislocation propagation and softening processes, with or without re-crystallization during rolling.
@@ -39,7 +39,7 @@ d) Lubrication is, in general, easier.
 
 ---
 
-## TYPICAL ARRANGEMENT OF ROLLERS FOR ROLLING MILLS
+### TYPICAL ARRANGEMENT OF ROLLERS FOR ROLLING MILLS
 
 ### TWO-HIGH MILL, PULLOVER
 
@@ -101,7 +101,7 @@ Each of the work rolls is supported by two backing rolls.
 
 ---
 
-## CONTINUOUS ROLLING
+### CONTINUOUS ROLLING
 
 - Use a series of rolling mill and each set is called a stand.
 - The strip will be moving at different velocities at each stage in the mill.
@@ -130,7 +130,7 @@ Consist of a pair of heavy backing rolls surrounded by a large number of planeta
 
 ---
 
-## ROLLING MILLS
+### ROLLING MILLS
 
 Rolling mill is a machine or a factory for shaping metal by passing it through rollers Successive stands of a large continuous mill.
 
@@ -144,7 +144,7 @@ Rolling mill is a machine or a factory for shaping metal by passing it through r
 
 ---
 
-## CONVENTIONAL HOT OR COLD-ROLLING
+### CONVENTIONAL HOT OR COLD-ROLLING
 
 The objective is to decrease the thickness of the metal with an increase in length and with little increase in width.
 
@@ -153,7 +153,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 ---
 
-## TRANSVERSE ROLLING
+### TRANSVERSE ROLLING
 
 - Using circular wedge rolls.
 - Heated bar is cropped to length and fed in transversely between rolls.
@@ -168,7 +168,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 ---
 
-## SHAPED ROLLING OR SECTION ROLLING
+### SHAPED ROLLING OR SECTION ROLLING
 
 
   <center>
@@ -182,7 +182,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 ---
 
-## Fundamental Concept of Metal Rolling
+### Fundamental Concept of Metal Rolling
 
 ### ASSUMPTIONS
 
@@ -200,7 +200,7 @@ The objective is to decrease the thickness of the metal with an increase in leng
 
 </center>
 
-## FORCES AND GEOMETRICAL RELATIONSHIPS IN ROLLING
+### FORCES AND GEOMETRICAL RELATIONSHIPS IN ROLLING
 
 - A metal sheet with a thickness h₀ enters the rolls at the entrance plane xx with a velocity vₒ.
 - It passes through the roll gap and leaves the exit plane yy with a reduced thickness h_f and at a velocity v_r.
@@ -288,7 +288,7 @@ L_p is the projected length of the arc of the contact
 
 ---
 
-## ROLL BITE CONDITION
+### ROLL BITE CONDITION
 
 For the work piece to enter the throat of the roll, the component of the friction force must be equal to or greater than the horizontal component of the normal force.
 
@@ -322,7 +322,7 @@ F = μP_r
 
 </center>
 
-## THE MAXIMUM REDUCTION
+### THE MAXIMUM REDUCTION
 
 From triangle ABC, we have:
 
@@ -343,7 +343,7 @@ As a is much smaller than R, we can then ignore a²
 
 ---
 
-## Torque and Power
+### Torque and Power
 
 Torque is the measure of the force applied to a member to produce rotational motion.
 
@@ -397,17 +397,9 @@ Since the power is defined as the rate of doing work, i.e., 1W = 1Js⁻¹, the p
 
 where P is in Newton and a is in meters
 
----
 
-## Summary
 
-This document covers the fundamental concepts of rolling processes including:
 
-- Introduction to hot and cold rolling
-- Various mill configurations (Two-high, Three-high, Four-high, Cluster, Planetary)
-- Continuous rolling operations
-- Types of rolling processes (Conventional, Transverse, Shaped)
-- Fundamental concepts including assumptions and mathematical relationships
 - Forces and geometrical relationships in rolling
 - Roll bite conditions and maximum reduction
 - Torque and power calculations

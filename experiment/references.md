@@ -6,7 +6,7 @@
 
 <body>
 
-<h2>References</h2>
+<h3>References</h3>
 
 <ol>
     <li>

@@ -137,7 +137,7 @@
             </div>
             <h2 class="modal-title">Simulation Not Available</h2>
             <p class="modal-description warning-text">
-                The simulation video for the selected parameter combination is currently not available.
+                No simulation exists for the selected parameter combination.
             </p>
             <div class="warning-details">
                 <p><strong>Your Selection:</strong></p>
@@ -149,8 +149,8 @@
                 </ul>
             </div>
             <div class="warning-note">
-                <p><strong>Note:</strong> Currently, only <strong>Cold Rolling</strong> simulations are available. Hot rolling videos will be added in future updates.</p>
-                <p>Please change the <strong>Temperature</strong> parameter to "Cold" to view the simulation.</p>
+                <p><strong>Note:</strong> Only <strong>Cold Rolling</strong> simulations are available for certain parameter combinations.</p>
+                <p>Please select different parameters to view a simulation.</p>
             </div>
             <div class="modal-actions">
                 <button class="modal-action-btn primary-btn" onclick="closeWarningModal()">
@@ -172,10 +172,10 @@
             // Update warning message based on issue
             const warningNote = document.querySelector('.warning-note');
             if (selectedParameters.temperature === 'Hot') {
-                warningNote.innerHTML = '<p><strong>Note:</strong> Currently, only <strong>Cold Rolling</strong> simulations are available. Hot rolling videos will be added in future updates.</p><p>Please change the <strong>Temperature</strong> parameter to "Cold" to view the simulation.</p>';
+                warningNote.innerHTML = '<p><strong>Note:</strong> Only <strong>Cold Rolling</strong> simulations are available for the selected parameters.</p><p>Please change the <strong>Temperature</strong> parameter to "Cold" to view a simulation.</p>';
             } else if (selectedParameters.material === 'Copper' && 
                       (selectedParameters.friction === 'Medium' || selectedParameters.friction === 'High')) {
-                warningNote.innerHTML = '<p><strong>Note:</strong> For <strong>Copper</strong> material, only <strong>Low Friction</strong> simulations are available. Medium and High friction videos will be added in future updates.</p><p>Please change the <strong>Friction</strong> parameter to "Low" to view the simulation.</p>';
+                warningNote.innerHTML = '<p><strong>Note:</strong> For <strong>Copper</strong> material, only <strong>Low Friction</strong> simulations are available.</p><p>Please change the <strong>Friction</strong> parameter to "Low" to view a simulation.</p>';
             }
             
             const modal = document.getElementById('warning-modal');

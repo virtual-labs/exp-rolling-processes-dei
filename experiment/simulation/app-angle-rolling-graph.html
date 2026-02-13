@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angle Rolling with Graph - Applications</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Angle Rolling</h3>
+                <ul class="nav-list">
+                    <li><a href="app-angle-rolling.html" class="nav-link">Angle Rolling</a></li>
+                    <li><a href="app-angle-rolling-graph.html" class="nav-link active">Angle Rolling with Graph</a></li>
+                    <li><a href="app-angle-bar.html" class="nav-link">Angle Bar Rolling</a></li>
+                    <li><a href="app-circular-bar.html" class="nav-link">Circular Bar Rolling</a></li>
+                </ul>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='applications-selection.html'">← Back to Selection</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process Applications</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Angle Rolling with Graph</h1>
+        <div class="content-box">
+            <div class="video-container">
+                <video controls loop>
+                    <source src="ROLLING/Applications/GraphRolling.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <p>In the left hand side of the video one can see the variation of strain with mesh in the billet during the rolling operation. Initially the strain in the billet is zero while during the operation the strain rises due to deformation.</p>
+            
+            <p>It rises upto 6.8406. Greater strain indicates more deformation, more grain refinement and hence better mechanical properties.</p>
+            
+            <p>In the right hand top side we can see the upper roller and lower roller. Similarly in the right hand bottom side of the video we can see the variation in the billet during the operation by the graph.</p>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

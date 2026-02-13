@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Bench - Rolling Process</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Simulation Bench</h3>
+                <p class="nav-description">Select parameters to run simulation</p>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process - Simulation Bench</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Configure Simulation Parameters</h1>
+        <div class="content-box">
+            <p>Select the material type, friction condition, and rolling velocity to generate your custom simulation. The system will demonstrate the rolling process based on your chosen parameters.</p>
+            
+            <div class="parameter-grid">
+                <!-- Material Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Material Type</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="material" data-value="Aluminium" onclick="selectParameter('material', 'Aluminium', this)">
+                            <span class="param-label">Aluminium</span>
+                        </button>
+                        <button class="param-button" data-param="material" data-value="Copper" onclick="selectParameter('material', 'Copper', this)">
+                            <span class="param-label">Copper</span>
+                        </button>
+                        <button class="param-button" data-param="material" data-value="Ck-45 Steel" onclick="selectParameter('material', 'Ck-45 Steel', this)">
+                            <span class="param-label">Ck-45 Steel</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Friction Condition Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Coefficient of Friction</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="friction" data-value="Low" onclick="selectParameter('friction', 'Low', this)">
+                            <span class="param-label">Low</span>
+                        </button>
+                        <button class="param-button" data-param="friction" data-value="Medium" onclick="selectParameter('friction', 'Medium', this)">
+                            <span class="param-label">Medium</span>
+                        </button>
+                        <button class="param-button" data-param="friction" data-value="High" onclick="selectParameter('friction', 'High', this)">
+                            <span class="param-label">High</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Velocity Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Velocity of Ram / Speed</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="velocity" data-value="0.5 mm/sec" onclick="selectParameter('velocity', '0.5 mm/sec', this)">
+                            <span class="param-label">0.5 mm/sec</span>
+                        </button>
+                        <button class="param-button" data-param="velocity" data-value="1 mm/sec" onclick="selectParameter('velocity', '1 mm/sec', this)">
+                            <span class="param-label">1 mm/sec</span>
+                        </button>
+                        <button class="param-button" data-param="velocity" data-value="1.5 mm/sec" onclick="selectParameter('velocity', '1.5 mm/sec', this)">
+                            <span class="param-label">1.5 mm/sec</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Temperature Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Material / Workpiece Temperature</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="temperature" data-value="Cold" onclick="selectParameter('temperature', 'Cold', this)">
+                            <span class="param-label">Cold</span>
+                        </button>
+                        <button class="param-button" data-param="temperature" data-value="Hot" onclick="selectParameter('temperature', 'Hot', this)">
+                            <span class="param-label">Hot</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selection Summary -->
+            <div class="selection-summary">
+                <h3>Current Selection:</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Material:</span>
+                        <span class="summary-value" id="selected-material">Not selected</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Friction:</span>
+                        <span class="summary-value" id="selected-friction">Not selected</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Velocity:</span>
+                        <span class="summary-value" id="selected-velocity">Not selected</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Temperature:</span>
+                        <span class="summary-value" id="selected-temperature">Not selected</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Run Simulation Button -->
+            <button class="run-simulation-btn" id="run-btn" onclick="runSimulation()" disabled>
+                Run Simulation
+            </button>
+        </div>
+    </main>
+
+    <!-- Warning Modal for Unavailable Videos -->
+    <div id="warning-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content warning-modal-content">
+            <div class="warning-icon">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 9V13M12 17H12.01M10.29 3.86L1.82 18C1.64537 18.3024 1.55296 18.6453 1.55199 18.9945C1.55101 19.3437 1.64151 19.6871 1.81445 19.9905C1.98738 20.2939 2.23675 20.5467 2.53773 20.7239C2.83871 20.901 3.18082 20.9962 3.53 21H20.47C20.8192 20.9962 21.1613 20.901 21.4623 20.7239C21.7633 20.5467 22.0126 20.2939 22.1856 19.9905C22.3585 19.6871 22.449 19.3437 22.448 18.9945C22.447 18.6453 22.3546 18.3024 22.18 18L13.71 3.86C13.5317 3.56611 13.2807 3.32312 12.9812 3.15448C12.6817 2.98585 12.3437 2.89725 12 2.89725C11.6563 2.89725 11.3183 2.98585 11.0188 3.15448C10.7193 3.32312 10.4683 3.56611 10.29 3.86Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <h2 class="modal-title">Simulation Not Available</h2>
+            <p class="modal-description warning-text">
+                No simulation exists for the selected parameter combination.
+            </p>
+            <div class="warning-details">
+                <p><strong>Your Selection:</strong></p>
+                <ul class="selected-params-list">
+                    <li><strong>Material:</strong> <span id="warning-material"></span></li>
+                    <li><strong>Friction:</strong> <span id="warning-friction"></span></li>
+                    <li><strong>Velocity:</strong> <span id="warning-velocity"></span></li>
+                    <li><strong>Temperature:</strong> <span id="warning-temperature"></span></li>
+                </ul>
+            </div>
+            <div class="warning-note">
+                <p><strong>Note:</strong> Only <strong>Cold Rolling</strong> simulations are available for certain parameter combinations.</p>
+                <p>Please select different parameters to view a simulation.</p>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-action-btn primary-btn" onclick="closeWarningModal()">
+                    Change Parameters
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script>
+        // Update warning modal with selected parameters
+        function showVideoUnavailableWarning() {
+            document.getElementById('warning-material').textContent = selectedParameters.material || 'Not selected';
+            document.getElementById('warning-friction').textContent = selectedParameters.friction || 'Not selected';
+            document.getElementById('warning-velocity').textContent = selectedParameters.velocity || 'Not selected';
+            document.getElementById('warning-temperature').textContent = selectedParameters.temperature || 'Not selected';
+            
+            // Update warning message based on issue
+            const warningNote = document.querySelector('.warning-note');
+            if (selectedParameters.temperature === 'Hot') {
+                warningNote.innerHTML = '<p><strong>Note:</strong> Only <strong>Cold Rolling</strong> simulations are available for the selected parameters.</p><p>Please change the <strong>Temperature</strong> parameter to "Cold" to view a simulation.</p>';
+            } else if (selectedParameters.material === 'Copper' && 
+                      (selectedParameters.friction === 'Medium' || selectedParameters.friction === 'High')) {
+                warningNote.innerHTML = '<p><strong>Note:</strong> For <strong>Copper</strong> material, only <strong>Low Friction</strong> simulations are available.</p><p>Please change the <strong>Friction</strong> parameter to "Low" to view a simulation.</p>';
+            }
+            
+            const modal = document.getElementById('warning-modal');
+            if (modal) {
+                modal.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>

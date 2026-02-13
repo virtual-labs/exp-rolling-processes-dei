@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circular Bar Rolling - Applications</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Angle Rolling</h3>
+                <ul class="nav-list">
+                    <li><a href="app-angle-rolling.html" class="nav-link">Angle Rolling</a></li>
+                    <li><a href="app-angle-rolling-graph.html" class="nav-link">Angle Rolling with Graph</a></li>
+                    <li><a href="app-angle-bar.html" class="nav-link">Angle Bar Rolling</a></li>
+                    <li><a href="app-circular-bar.html" class="nav-link active">Circular Bar Rolling</a></li>
+                </ul>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='applications-selection.html'">← Back to Selection</button>
+            <button class="back-button" onclick="window.location.href='index.html'" style="margin-top: 8px;">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process Applications</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Circular Bar Rolling</h1>
+        <div class="content-box">
+            <div class="video-container">
+                <video controls loop>
+                    <source src="ROLLING/Applications/CircularBar_Rolling.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <br>
+            
+            <p>This video shows the circular bar rolling procedure. On left hand side, one could see the setup of the circular bar rolling and the process of rolling. The circular groove in the roller rolls the rectangular billet transforms it into circular billet.</p>
+            
+            <p>The equivalent strain generated can be determined by the scale on left hand side. On the right hand side, one could view the billet being deformed and the strains being generated over the surface which can be determined by the scale on left side.</p>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

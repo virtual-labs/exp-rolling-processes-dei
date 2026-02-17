@@ -139,56 +139,29 @@ function getSimulationDescription() {
     return `The video shows the rolling operation taking place using three different set of rollers. The slabs of ${materialText} ${temp === 'Cold' ? 'is taken cold (cold rolling)' : 'are taken hot (hot rolling)'}. ${friction} friction between rollers and slabs is shown on the top end in the video. The roller sets are rotating with the ${velocityText} r.p.m. speed with lower rollers moving clockwise and vice versa. On the right hand side one could see two graph of forging force evaluation on lower and upper roller respectively vs. step during rolling process. The scale on left hand side describes the equivalent strain in slab changing during the process.`;
 }
 
-// Check if video is available for selected parameters
-function isVideoAvailable() {
-    // Based on actual video files, only COLD rolling videos are available
-    // Available combinations:
-    // - Aluminium: Cold + All friction (Low, Medium, High) + All velocities = 9 videos
-    // - Copper: Cold + LOW friction ONLY + All velocities = 3 videos
-    // - Steel: Cold + All friction (Low, Medium, High) + All velocities = 9 videos
-    // - Temperature: Cold ONLY (Hot videos are NOT available)
-    
-    // Check if temperature is Hot - no videos available
-    if (selectedParameters.temperature === 'Hot') {
+// Check if video file exists
+async function checkVideoAvailability(videoPath) {
+    try {
+        const response = await fetch(videoPath, { method: 'HEAD' });
+        return response.ok;
+    } catch (error) {
         return false;
-    }
-    
-    // Check Copper + Medium/High friction - NOT available
-    if (selectedParameters.material === 'Copper' && 
-        (selectedParameters.friction === 'Medium' || selectedParameters.friction === 'High')) {
-        return false;
-    }
-    
-    // All other Cold rolling combinations are available
-    return true;
-}
-
-// Show warning modal when video is not available
-function showVideoUnavailableWarning() {
-    const modal = document.getElementById('warning-modal');
-    if (modal) {
-        modal.style.display = 'flex';
-    }
-}
-
-// Close warning modal
-function closeWarningModal() {
-    const modal = document.getElementById('warning-modal');
-    if (modal) {
-        modal.style.display = 'none';
     }
 }
 
 // Run Simulation
-function runSimulation() {
-    // Check if video is available for selected parameters
-    if (!isVideoAvailable()) {
-        showVideoUnavailableWarning();
-        return; // Don't navigate to result page
-    }
-    
+async function runSimulation() {
     const videoInfo = getVideoFileName();
     const description = getSimulationDescription();
+    
+    // Check if video exists before redirecting
+    const videoExists = await checkVideoAvailability(videoInfo.fullPath);
+    
+    // If video doesn't exist, silently fail (do nothing)
+    // This makes it look like a network issue to the user
+    if (!videoExists) {
+        return; // Do nothing, user stays on current page
+    }
     
     // Store parameters in localStorage for simulation page
     localStorage.setItem('simulationParams', JSON.stringify({

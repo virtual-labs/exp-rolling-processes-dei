@@ -12,8 +12,8 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 32px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #e2e8f0;
 }
 
@@ -51,9 +51,9 @@
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 28px;
     color: #1e293b;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
     font-weight: 700;
     border-bottom: none;
     padding-bottom: 0;
@@ -75,7 +75,7 @@
 
 .content-box {
     background: #ffffff;
-    padding: 32px;
+    padding: 24px;
     border-radius: 20px;
     border: 1px solid #e2e8f0;
     line-height: 1.8;
@@ -108,10 +108,10 @@
 }
 
 .content-box p {
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     color: #64748b;
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.7;
 }
 
 .content-box h2 {

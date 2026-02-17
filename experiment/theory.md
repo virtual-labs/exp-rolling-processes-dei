@@ -275,14 +275,14 @@ L_p is the projected length of the arc of the contact
 - The area in shade represent the force required to overcome frictional forces between the roll and the sheet.
 - The area under the dashed line AB represents the force required to deform the metal in plane homogeneous compression.
 
- <div class="image-container">
-                    <img src="Rolling\r14.jpg" alt="Two-high mill, pullover" height="300" width="400">
-                    <div class="image-label"></div>
-                </div>
-                <div class="image-container">
-                    <img src="Rolling\r15.jpg" alt="Two-high mill, pullover" height="250" width="200">
-                    <div class="image-label"></div>
-                </div>
+<center>
+      <img src="Rolling\r14.jpg" alt="Two-high mill, pullover" height="300" width="400">
+      <div class="image-label"></div>
+</center>
+<center>
+      <img src="Rolling\r15.jpg" alt="Two-high mill, pullover" height="250" width="200">
+      <div class="image-label"></div>
+</center>
 
 ---
 

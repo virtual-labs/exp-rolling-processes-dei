@@ -1,0 +1,85 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "Alligatoring is the defect arises in the process:",
+      "answers": {
+        "a": "Extrusion",
+        "b": "Rolling",
+        "c": "Drawing",
+        "d": "Punching"
+      },
+      "explanations": {
+        "a": "Extrusion defects are different.",
+        "b": "Alligatoring is a common rolling defect.",
+        "c": "Drawing has different failure modes.",
+        "d": "Punching does not involve bulk deformation."
+      },
+      "correctAnswer": "b"
+    },
+    {
+      "question": "Which of the following is the smallest rolled product:",
+      "answers": {
+        "a": "Ingot",
+        "b": "Bloom",
+        "c": "Billet",
+        "d": "Slab"
+      },
+      "explanations": {
+        "a": "Ingot is the largest initial product.",
+        "b": "Bloom is larger than billet.",
+        "c": "Billet is smaller than bloom and slab.",
+        "d": "Slab has large cross-section."
+      },
+      "correctAnswer": "c"
+    },
+    {
+      "question": "The velocity of ram used in simulation of rolling process is:",
+      "answers": {
+        "a": "0.5 mm/sec, 1 mm/sec, 1.5 mm/sec",
+        "b": "1 mm/sec, 1.5 mm/sec, 2 mm/sec",
+        "c": "1 mm/sec, 2 mm/sec, 3 mm/sec",
+        "d": "1 mm/sec, 5 mm/sec, 10 mm/sec"
+      },
+      "explanations": {
+        "a": "This set matches the simulation parameters.",
+        "b": "Higher values are not used in simulation.",
+        "c": "Values exceed simulation limits.",
+        "d": "These speeds are too high."
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "question": "The material which is not used in simulation for rolling operation is:",
+      "answers": {
+        "a": "Aluminium",
+        "b": "Copper",
+        "c": "Steel",
+        "d": "Zinc"
+      },
+      "explanations": {
+        "a": "Aluminium is commonly used.",
+        "b": "Copper is used in simulation.",
+        "c": "Steel is used in rolling simulation.",
+        "d": "Zinc is not used."
+      },
+      "correctAnswer": "d"
+    },
+    {
+      "question": "The direction of rotation of upper and lower rollers in roller operation is:",
+      "answers": {
+        "a": "Same direction",
+        "b": "Opposite direction",
+        "c": "Both direction",
+        "d": "No direction"
+      },
+      "explanations": {
+        "a": "Same direction will not draw material.",
+        "b": "Opposite direction pulls material into rolls.",
+        "c": "Only opposite rotation is correct.",
+        "d": "Rollers must rotate."
+      },
+      "correctAnswer": "b"
+    }
+  ]
+}

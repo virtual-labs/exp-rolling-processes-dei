@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulation Bench - Rolling Process</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <nav class="nav-menu">
+            <div class="nav-section">
+                <h3 class="nav-title">Simulation Bench</h3>
+                <p class="nav-description">Select parameters to run simulation</p>
+            </div>
+            
+            <button class="back-button" onclick="window.location.href='index.html'">← Back to Home</button>
+        </nav>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        <!-- Header with Logo -->
+        <div class="content-header">
+            <img src="images/deiLogo.jpg" alt="DEI Logo" class="content-logo" />
+            <div class="header-text">
+                <h1 class="header-title">Virtual Lab Simulation Environment</h1>
+                <p class="header-subtitle">Rolling Process - Simulation Bench</p>
+            </div>
+        </div>
+        
+        <h1 class="section-title">Configure Simulation Parameters</h1>
+        <div class="content-box">
+            <p>Select the material type, friction condition, and rolling velocity to generate your custom simulation. The system will demonstrate the rolling process based on your chosen parameters.</p>
+            
+            <div class="parameter-grid">
+                <!-- Material Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Material Type</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="material" data-value="Aluminium" onclick="selectParameter('material', 'Aluminium', this)">
+                            <span class="param-label">Aluminium</span>
+                        </button>
+                        <button class="param-button" data-param="material" data-value="Copper" onclick="selectParameter('material', 'Copper', this)">
+                            <span class="param-label">Copper</span>
+                        </button>
+                        <button class="param-button" data-param="material" data-value="Ck-45 Steel" onclick="selectParameter('material', 'Ck-45 Steel', this)">
+                            <span class="param-label">Ck-45 Steel</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Friction Condition Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Coefficient of Friction</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="friction" data-value="Low" onclick="selectParameter('friction', 'Low', this)">
+                            <span class="param-label">Low</span>
+                        </button>
+                        <button class="param-button" data-param="friction" data-value="Medium" onclick="selectParameter('friction', 'Medium', this)">
+                            <span class="param-label">Medium</span>
+                        </button>
+                        <button class="param-button" data-param="friction" data-value="High" onclick="selectParameter('friction', 'High', this)">
+                            <span class="param-label">High</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Velocity Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Velocity of Ram / Speed</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="velocity" data-value="0.5 mm/sec" onclick="selectParameter('velocity', '0.5 mm/sec', this)">
+                            <span class="param-label">0.5 mm/sec</span>
+                        </button>
+                        <button class="param-button" data-param="velocity" data-value="1 mm/sec" onclick="selectParameter('velocity', '1 mm/sec', this)">
+                            <span class="param-label">1 mm/sec</span>
+                        </button>
+                        <button class="param-button" data-param="velocity" data-value="1.5 mm/sec" onclick="selectParameter('velocity', '1.5 mm/sec', this)">
+                            <span class="param-label">1.5 mm/sec</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Temperature Selection -->
+                <div class="parameter-section">
+                    <h3 class="parameter-title">Material / Workpiece Temperature</h3>
+                    <div class="parameter-options">
+                        <button class="param-button" data-param="temperature" data-value="Cold" onclick="selectParameter('temperature', 'Cold', this)">
+                            <span class="param-label">Cold</span>
+                        </button>
+                        <button class="param-button" data-param="temperature" data-value="Hot" onclick="selectParameter('temperature', 'Hot', this)">
+                            <span class="param-label">Hot</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Selection Summary -->
+            <div class="selection-summary">
+                <h3>Current Selection:</h3>
+                <div class="summary-grid">
+                    <div class="summary-item">
+                        <span class="summary-label">Material:</span>
+                        <span class="summary-value" id="selected-material">Not selected</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Friction:</span>
+                        <span class="summary-value" id="selected-friction">Not selected</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Velocity:</span>
+                        <span class="summary-value" id="selected-velocity">Not selected</span>
+                    </div>
+                    <div class="summary-item">
+                        <span class="summary-label">Temperature:</span>
+                        <span class="summary-value" id="selected-temperature">Not selected</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Run Simulation Button -->
+            <button class="run-simulation-btn" id="run-btn" onclick="runSimulation()" disabled>
+                Run Simulation
+            </button>
+        </div>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+
+/home/runner/work/exp-rolling-processes-dei/exp-rolling-processes-dei/experiment/simulation/js/main.js
+   10:10  warning  'selectMode' is defined but never used              no-unused-vars
+   17:10  warning  'showApplicationsModal' is defined but never used   no-unused-vars
+   25:10  warning  'closeApplicationsModal' is defined but never used  no-unused-vars
+   33:10  warning  'selectApplication' is defined but never used       no-unused-vars
+   38:10  warning  'selectParameter' is defined but never used         no-unused-vars
+  134:9   warning  'frictionText' is assigned a value but never used   no-unused-vars
+  153:16  warning  'runSimulation' is defined but never used           no-unused-vars
+
+✖ 7 problems (0 errors, 7 warnings)
+

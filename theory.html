@@ -1,0 +1,692 @@
+<!DOCTYPE html><html lang="en"><head>
+      <!--Google Tag Manager-->
+      <script class="gtm">
+        var dataLayer = [{
+        'labName': 'Virtual Lab',
+        'discipline': 'Test',
+        'college': 'DLBG',
+        'phase': 'Testing',
+        'expName': 'ROLLING PROCESSES',
+        'expShortName': 'rolling-processes'
+        }];
+    
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&amp;l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5NMQ9NQ');
+      </script>
+      <!--End Google Tag Manager-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    
+    	<meta name="experiment-short-name" content="rolling-processes">
+    	<meta name="developer-institute" content="DLBG">
+    	<meta name="learning-unit" content="ROLLING PROCESSES">
+    	<meta name="task-name" content="Theory">
+    
+    <!-- For iPhone -->
+    <meta name="msapplication-TileColor" content="#4076e0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#4076e0">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4076e0">
+    <title>Virtual Labs</title>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/4.0.0/github-markdown.min.css" integrity="sha512-Oy18vBnbSJkXTndr2n6lDMO5NN31UljR8e/ICzVPrGpSud4Gkckb8yUpqhKuUNoE+o9gAb4O/rAxxw1ojyUVzg==" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&amp;family=Raleway&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/github-markdown.min.css">
+    <link rel="stylesheet" href="./assets/css/vlabs-style.css">
+    <link rel="stylesheet" href="./assets/css/toast.css">
+    <link rel="stylesheet" href="./assets/katex_assets/katex.min.css">
+    
+    <script src="./assets/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+      h1 {
+      font-size: 1.8rem;
+      }
+      h2 {
+      font-size: 1.4rem;
+      }
+      h3 {
+      font-size: 1.2rem;
+      }
+
+      h2, h3 {
+      font-weight: 800;
+      }
+    </style>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></head>
+  <body class="p-0 container-fluid vlabs-page d-flex flex-column justify-content-between">
+      <!--Google Tag Manager (noscript)-->
+      <noscript class="gtm">
+        <iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-5NMQ9NQ" style="display:none;visibility:hidden" width="0">
+        </iframe>
+      </noscript>
+      <!--End Google Tag Manager (noscript)-->
+  
+      <header class="vlabs-header sticky-top bg-white">
+        <nav class="p-0 navbar navbar-light d-flex align-items-stretch">
+          
+          <button class="navbar-toggler px-4" type="button" onclick="toggle()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="d-flex justify-content-center">        
+            <a href="https://vlab.co.in" class="navbar-brand">
+              <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+            </a>
+          </div>
+          
+          <div id="headerNavbar" class="d-none border-top flex-grow-1 d-lg-flex align-items-center justify-content-end">
+            <div class="svc-rating-display">
+                <rating-display spreadsheetid="1x12nhpp0QvnsA6x-O1sV4IA9SAbfVsq_wiexWkutOmU" sheetname="Experiment-Database" columnname="Experiment Short Name" columnvalue="rolling-processes" imagesdirectory="/plugins/svc-rating/images/">
+                </rating-display>
+            </div>      <div class="svc-rating-submit">
+                <rating-submit title="Rate" this="" experiment="">
+                </rating-submit>
+            </div>      <bug-report id="bug-report" title="[BUG REPORT] ROLLING PROCESSES" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;DLBG&quot;,&quot;expname&quot;:&quot;ROLLING PROCESSES&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" button_style="border: none; color: #fff; background-color: #288ec8; text-align: center; font-size: 1.05rem; border-radius: 1em;padding: 0.6em 1.2em; margin: 0 10px" position="override" custom_button_class="v-button"></bug-report>
+          </div>
+        </nav>
+      </header>
+      <div class="container-fluid flex-fill d-flex flex-column vlabs-page-main">
+        <div class="row d-flex justify-content-between">
+          <div class="flex-column">
+          <div class="row py-4 px-4 breadcrumbs">
+          	<div class="title is-4 tools">Tools</div>
+          	<span class="mx-2">
+          		<i aria-hidden="true" class="fa fa-angle-right"></i>
+          	</span>
+          	<a href="performance-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Performance Tool</button>
+          	</a>
+          	<a href="validator-report.html" class="my-2 mx-3" target="_blank">
+          		<button class="v-button">Validation Tool</button>
+          	</a>
+          </div>
+          </div>
+        </div>
+        <div class="row flex-grow-1 d-flex flex-nowrap flex-column flex-lg-row">
+          <div class="modal fade popupmenu" id="popupMenu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                              <a href="https://vlab.co.in" class="navbar-brand">
+                                  <img src="./assets/images/vlabs-color-small-moe.jpg" alt="vlabs logo" class="vlabs-logo">
+                              </a>
+                          </h5>
+                          <button type="button" class="btn-close align-self-center" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body nav-menu">
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="index.html" class="p-2 ">
+                                      Aim
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="theory.html" class="p-2  current-item ">
+                                      Theory
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="pretest.html" class="p-2 ">
+                                      Pretest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="procedure.html" class="p-2 ">
+                                      Procedure
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="simulation.html" class="p-2 ">
+                                      Simulation
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="posttest.html" class="p-2 ">
+                                      Posttest
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="references.html" class="p-2 ">
+                                      References
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="d-flex nav-menu-body">
+                                      <a href="feedback.html" class="p-2 ">
+                                      Feedback
+                                      </a>
+                                      
+                                  </div>
+                                  <div id="t-" class="collapse">
+                                      <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                                      </div>
+                                  </div>
+                              </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="nav flex-column sidebar nav-menu flex-shrink-0 px-lg-4 align-items-center align-items-lg-start hidden d-none d-lg-flex" id="menu">
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="index.html" class="p-2 ">
+                        Aim
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="theory.html" class="p-2  current-item ">
+                        Theory
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="pretest.html" class="p-2 ">
+                        Pretest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="procedure.html" class="p-2 ">
+                        Procedure
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="simulation.html" class="p-2 ">
+                        Simulation
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="posttest.html" class="p-2 ">
+                        Posttest
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="references.html" class="p-2 ">
+                        References
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="d-flex nav-menu-body">
+                        <a href="feedback.html" class="p-2 ">
+                        Feedback
+                        </a>
+                        
+                    </div>
+                    <div id="t-" class="collapse">
+                        <div class="px-3 d-flex flex-column tasks align-items-center align-items-lg-start">
+                        </div>
+                    </div>
+                </div>
+          </div>          <div class="vlabs-page-content px-5 pb-4 flex-grow-1 markdown-body">
+            <div class="text-center fix-spacing">
+              <h2 id="rolling-processes">Rolling processes</h2>
+          
+            </div>
+              <h3 id="theory">Theory</h3>
+          <p>It is the process of plastically deforming metal by passing it between rolls. Rolling may be defined as the reduction of the cross-sectional area of the metal stock, or the general shaping of the metal products, through the use of the rotating rolls. It allows a high degree of closed-loop automation and very high speeds, and is thus capable of providing high-quality, close tolerance starting material for various secondary sheet metal working processes at a low cost.</p>
+          <ul>
+          <li>Rolling is the most widely used forming process, which provides high production and close control of final product.</li>
+          <li>The metal is subjected to high compressive stresses as a result of the friction between the rolls and the Rolling process metal surface.</li>
+          </ul>
+          <hr>
+          <h3 id="introduction---hot-and-cold-rolling-processes">Introduction - Hot and Cold Rolling Processes</h3>
+          <h3 id="hot-rolling">Hot Rolling</h3>
+          <p>The initial breakdown of ingots into blooms and billets is generally done by hot-rolling. This is followed by further hot rolling into plate, sheet, rod, bar, pipe, rail. The distinctive mark of hot rolling is not a crystallized structure, but the simultaneous occurrence of dislocation propagation and softening processes, with or without re-crystallization during rolling.</p>
+          <p><strong>Hot rolling offers several advantages:</strong></p>
+          <p>a) Flow stresses are low, hence forces and power requirements are relatively low, and even very large work pieces can be deformed with equipment of reasonable size.</p>
+          <p>b) Ductility is high; hence large deformations can be taken (in excess of 99% reduction).</p>
+          <p>c) Complex part shapes can be generated.</p>
+          <h3 id="cold-rolling">Cold Rolling</h3>
+          <p>The cold-rolling of metals has played a major role in industry by providing sheet, strip, foil with good surface finishes and increased mechanical strength with close control of product dimensions. Cold rolling, in the everyday sense, means rolling at room temperature, although the work of deformation can raise temperatures to 100-200°C. Cold rolling usually follows hot rolling.</p>
+          <p><strong>Cold rolling has several advantages:</strong></p>
+          <p>a) In the absence of cooling and oxidation, tighter tolerances and better surface finish can be obtained.</p>
+          <p>b) Thinner walls are possible.</p>
+          <p>c) The final properties of the workpiece can be closely controlled and, if desired, the high strength obtained during cold rolling can be retained or, if high ductility is needed, grain size can be controlled before annealing.</p>
+          <p>d) Lubrication is, in general, easier.</p>
+          <hr>
+          <h3 id="typical-arrangement-of-rollers-for-rolling-mills">TYPICAL ARRANGEMENT OF ROLLERS FOR ROLLING MILLS</h3>
+          <h3 id="two-high-mill-pullover">TWO-HIGH MILL, PULLOVER</h3>
+          <p>The stock is returned to the entrance for further reduction.</p>
+          <center>
+          
+          <p><img src="Rolling/Figure 1.jpg" alt="Tube Swaging" height="275" width="350"><br>
+          <b>Figure 2: Two-high mill, Pullover </b><br><br></p>
+          </center>
+          
+          <h3 id="two-high-mill-reversing">TWO-HIGH MILL, REVERSING</h3>
+          <p>The work can be passed back and forth through the rolls by reversing their direction of rotation.</p>
+          <center>
+          <img src="Rolling/Figure 2.jpg" alt="Tube Swaging" height="275" width="350"><br>
+          <b>Figure 3: Two-high mill, reversing</b><br><br>
+          </center>
+          
+          <h3 id="three-high-mill">THREE-HIGH MILL</h3>
+          <p>Consist of upper and lower driven rolls and a middle roll, which rotates by friction.</p>
+          <center>
+          <img src="Rolling/Figure 3.jpg" height="275" width="350"><br>
+          <b>Figure 3: Three-high mill</b><br><br>
+          </center>
+          
+          <h3 id="four-high-mill">FOUR-HIGH MILL</h3>
+          <p>Small-diameter rolls (less strength &amp; rigidity) are supported by larger-diameter backup rolls.</p>
+          <center>
+          <img src="Rolling/Four-high mill.jpg" height="275" width="350" "=""><br>
+          <b>Figure 4: Four-high mill</b><br><br>
+          </center>
+          
+          <h3 id="cluster-mill-or-sendzimir-mill">CLUSTER MILL OR SENDZIMIR MILL</h3>
+          <p>Each of the work rolls is supported by two backing rolls.</p>
+          <center>
+          <img src="Rolling/Cluster mill or sendzimir mill.jpg" height="300" width="350"><br>
+          <b>Figure 5: Cluster mill or sendzimir mill</b><br><br>
+          </center>
+          
+          
+          
+          <hr>
+          <h3 id="continuous-rolling">CONTINUOUS ROLLING</h3>
+          <ul>
+          <li>Use a series of rolling mill and each set is called a stand.</li>
+          <li>The strip will be moving at different velocities at each stage in the mill.</li>
+          <li>The un coiler and windup reel not only feed the stock into the rolls and coiling up.</li>
+          <li>the final product but also provide back tension and front tension to the strip.</li>
+          <li>The speed of each set of rolls is synchronised so that the input speed of each stand is equal to the output speed of preceding stand.</li>
+          </ul>
+          <p>Given below is the example of a four stand continuous mill or tandem mill. Typical arrangement of rollers for rolling mills.</p>
+          <h3 id="planetary-mill">Planetary Mill</h3>
+          <p>Consist of a pair of heavy backing rolls surrounded by a large number of planetary rolls.</p>
+          <ul>
+          <li>Each planetary roll gives an almost constant reduction to the slab as it sweeps out a circular path between the backing rolls and the slab.</li>
+          <li>As each pair of planetary rolls ceases to have contact with the work piece, another pair of rolls makes contact and repeat that reduction.</li>
+          <li>The overall reduction is the summation of a series of small reductions by each pair of rolls.</li>
+          <li>Therefore, the planetary mill can hot reduces a slab directly to strip in one pass through the mill.</li>
+          <li>The operation requires feed rolls to introduce the slab into the mill, and a pair of planishing rolls on the exit to improve the surface finish.</li>
+          </ul>
+          <center>
+          <img src="Rolling/Typical arrangement of rollers for rolling mill.jpg" height="275" width="350"><br>
+          <b>Figure 6: Typical arrangement of rollers for rolling mill</b><br><br>
+          </center>
+          
+          <hr>
+          <h3 id="rolling-mills">ROLLING MILLS</h3>
+          <p>Rolling mill is a machine or a factory for shaping metal by passing it through rollers Successive stands of a large continuous mill.</p>
+          <p><strong>A rolling mill basically consists of:</strong></p>
+          <ul>
+          <li>rolls</li>
+          <li>bearings</li>
+          <li>a housing for containing these parts</li>
+          <li>a drive (motor) for applying power to the rolls and controlling the speed</li>
+          <li>Requires very rigid construction, large motors to supply enough power (MN).</li>
+          </ul>
+          <hr>
+          <h3 id="conventional-hot-or-cold-rolling">CONVENTIONAL HOT OR COLD-ROLLING</h3>
+          <p>The objective is to decrease the thickness of the metal with an increase in length and with little increase in width.</p>
+          <ul>
+          <li>The material in the centre of the sheet is constrained in the z direction (across the width of the sheet) and the constraints of undeformed shoulders of material on each side of the rolls prevent extension of the sheet in the width direction.</li>
+          <li>This condition is known as plane strain. The material therefore gets longer and not wider.</li>
+          </ul>
+          <hr>
+          <h3 id="transverse-rolling">TRANSVERSE ROLLING</h3>
+          <ul>
+          <li>Using circular wedge rolls.</li>
+          <li>Heated bar is cropped to length and fed in transversely between rolls.</li>
+          <li>Rolls are revolved in one direction.</li>
+          </ul>
+          <center>
+          <img src="Rolling/Transverse rolling.jpg" alt="Transverse rolling" height="275" width="275">&gt;<br>
+          <b>Figure 7: Transverse rolling</b><br><br>
+          </center>
+          
+          <hr>
+          <h3 id="shaped-rolling-or-section-rolling">SHAPED ROLLING OR SECTION ROLLING</h3>
+            <center>
+          <img src="Rolling/Shaped rolling.jpg" alt="Shaped rolling" height="275" width="225"><br>
+          <b>Figure 8: Shaped rolling</b><br><br>
+          </center>
+          
+          <ul>
+          <li>A special type of cold rolling in which flat slab is progressively bent into complex shapes by passing it through a series of driven rolls.</li>
+          <li>No appreciable change in the thickness of the metal during this process.</li>
+          <li>Suitable for producing moulded sections such as irregular shaped channels and trim. A variety of sections can be produced by roll forming process using a series of forming rollers in a continuous method to roll the metal sheet to a specific shape.</li>
+          </ul>
+          <hr>
+          <h3 id="fundamental-concept-of-metal-rolling">Fundamental Concept of Metal Rolling</h3>
+          <h3 id="assumptions">ASSUMPTIONS</h3>
+          <ol>
+          <li>The arc of contact between the rolls and the metal is a part of a circle.</li>
+          <li>The coefficient of friction, μ, is constant in the theory, but in reality μ varies along the arc of contact.</li>
+          <li>The metal is considered to deform plastically during rolling.</li>
+          <li>The volume of metal is constant before and after the rolling. In practical the volume might decrease a little bit due to close-up of pores.</li>
+          <li>The velocity of the rolls is assumed to be constant.</li>
+          <li>The metal only extends in the rolling direction and no extension in the width of the material.</li>
+          <li>The cross sectional area normal to the rolling direction is not distorted.</li>
+          </ol>
+          <center>
+          <img src="Rolling\ASSUMPTIONS.jpg" alt="Two-high mill, pullover" height="275" width="375"><br>
+          
+          </center>
+          
+          <h3 id="forces-and-geometrical-relationships-in-rolling">FORCES AND GEOMETRICAL RELATIONSHIPS IN ROLLING</h3>
+          <ul>
+          <li>A metal sheet with a thickness h₀ enters the rolls at the entrance plane xx with a velocity vₒ.</li>
+          <li>It passes through the roll gap and leaves the exit plane yy with a reduced thickness h_f and at a velocity v_r.</li>
+          <li>Given that there is no increase in width, the vertical compression of the metal is translated into an elongation in the rolling direction.</li>
+          <li>Since there is no change in metal volume at a given point per unit time throughout the process, therefore</li>
+          </ul>
+          <center>
+          <img src="Rolling\GEOMETRICAL.jpg" alt="Two-high mill, pullover" height="175" width="350"><br>
+          
+          </center>
+          ### Volume Conservation
+          
+          <p><strong>bh₀ν₀ = bhν = h_fν_f ... Eq.1</strong></p>
+          <p>where:</p>
+          <ul>
+          <li>b is the width of the sheet</li>
+          <li>v is the velocity at any thickness h intermediate between h₀ and h_f</li>
+          </ul>
+          <p>From Eq.1:</p>
+          <p>bh₀v₀ = bhv = bh_fv_f</p>
+          <p>given that, b₀ = b_f</p>
+          <p>then we have: v₀h₀ = v_fh_f</p>
+          <p><strong>v₀/v_f = h_f/h₀ ... Eq.2</strong></p>
+          <p>The velocity of the sheet must steadily increase from entrance to exit such that a vertical element in the sheet remain undistorted.</p>
+          <h3 id="forces-acting-on-the-metal">Forces Acting on the Metal</h3>
+          <ul>
+          <li><p>At only one point along the surface of the contact between the roll and the sheet, the two forces act on the metal:</p>
+          <ol>
+          <li>a radial force P_r</li>
+          <li>a tangential frictional force F</li>
+          </ol>
+          </li>
+          <li><p>If the surface velocity of the roll v_r equal to the velocity of the sheet, this point is called neutral point or no-slip point. For example, point N.</p>
+          </li>
+          <li><p>Between the entrance plane(xx) and the neutral point the sheet is moving slower than the roll surface, and the tangential frictional force, F, act in the direction (see fig.) to draw the metal into the roll.</p>
+          </li>
+          <li><p>On the exit side(yy) of the neutral point, the sheet moves faster than the roll surface. The direction of the frictional force is then reversed and oppose the delivery of the sheet from the rolls.</p>
+          </li>
+          </ul>
+          <center>
+          <img src="Rolling\a tangential frictional force.jpg" alt="Two-high mill, pullover" height="300" width="450"><br>
+          
+          </center>
+          
+          <h3 id="specific-roll-pressure">Specific Roll Pressure</h3>
+          <p>P_r is the radial force, with a vertical component P (rolling load - the load with which the rolls press against the metal).</p>
+          <p>The specific roll pressure, p, is the rolling load divided by the contact area.</p>
+          <p><strong>p = P / (bl_p) ... Eq.3</strong></p>
+          <p>where b is the width of the sheet.</p>
+          <center>
+          <img src="Rolling\r13.jpg" alt="Two-high mill, pullover" height="400" width="400"><br>
+          
+          </center>
+          
+          <p>L_p is the projected length of the arc of the contact</p>
+          <p><strong>L_p ≈ √(RΔh) ... Eq.4</strong></p>
+          <h3 id="pressure-distribution">Pressure Distribution</h3>
+          <ul>
+          <li>The distribution of the roll pressure along the arc of contact shows that the pressure rises to a maximum at the neutral point and then falls off.</li>
+          <li>The pressure distribution does not come to a sharp peak at the neutral point, which indicate that the neutral point is not really a line on the roll surface but an area.</li>
+          <li>The area under the curve is proportional to the rolling load.</li>
+          <li>The area in shade represent the force required to overcome frictional forces between the roll and the sheet.</li>
+          <li>The area under the dashed line AB represents the force required to deform the metal in plane homogeneous compression.</li>
+          </ul>
+          <center>
+                <img src="Rolling\r14.jpg" alt="Two-high mill, pullover" height="300" width="400">
+                <div class="image-label"></div>
+          </center>
+          <center>
+                <img src="Rolling\r15.jpg" alt="Two-high mill, pullover" height="250" width="200">
+                <div class="image-label"></div>
+          </center>
+          
+          <hr>
+          <h3 id="roll-bite-condition">ROLL BITE CONDITION</h3>
+          <p>For the work piece to enter the throat of the roll, the component of the friction force must be equal to or greater than the horizontal component of the normal force.</p>
+          <p><strong>F cos α ≥ P_r sin α</strong></p>
+          <p><strong>F/P_r ≥ sin α / cos α ≥ tan α</strong></p>
+          <center>
+          <img src="Rolling\r16.jpg" alt="Two-high mill, pullover" height="250" width="375"><br>
+          
+          </center>
+          
+          <p>But we know that:</p>
+          <p>F = μP_r</p>
+          <p><strong>μ = tan α ... Eq.5</strong></p>
+          <h3 id="conditions-for-rolling">Conditions for Rolling</h3>
+          <ul>
+          <li>If tan α &gt; μ, the work piece cannot be drawn.</li>
+          <li>If μ = 0, rolling cannot occur.</li>
+          <li><strong>Therefore Free engagement will occur when μ &gt; tan α</strong></li>
+          </ul>
+          <center>
+          <img src="Rolling\r17.jpg" alt="Two-high mill, pullover" height="400" width="600"><br>
+          
+          </center>
+          
+          <h3 id="the-maximum-reduction">THE MAXIMUM REDUCTION</h3>
+          <p>From triangle ABC, we have:</p>
+          <center>
+          <img src="Rolling\r18.jpg" alt="Two-high mill, pullover" height="300" width="400"><br>
+          
+          </center>
+          
+          <p><strong>R² = L_p² + (R - a)²</strong></p>
+          <p><strong>L_p² = R² - (R² - 2Ra + a²)</strong></p>
+          <p><strong>L_p² = 2Ra - a²</strong></p>
+          <p>As a is much smaller than R, we can then ignore a²</p>
+          <hr>
+          <h3 id="torque-and-power">Torque and Power</h3>
+          <p>Torque is the measure of the force applied to a member to produce rotational motion.</p>
+          <p>Power is applied to a rolling mill by applying a torque to the rolls and by means of strip tension.</p>
+          <h3 id="power-distribution">Power Distribution</h3>
+          <p><strong>The power is spent principally in four ways:</strong></p>
+          <p>a) The energy needed to deform the metal.</p>
+          <p>b) The energy needed to overcome the frictional force.</p>
+          <p>c) The power lost in the pinions and power-transmission system.</p>
+          <p>d) Electrical losses in the various motors and generators.</p>
+          <p><strong>Remarks:</strong> Losses in the windup reel and uncoiler must also be considered.</p>
+          <h3 id="moment-arm-ratio">Moment Arm Ratio</h3>
+          <p>The total rolling load is distributed over the arc of contact in the typical friction-hill pressure distribution. However the total rolling load can be assumed to be concentrated at a point along the arc of the contact at a distance a from the line of centres of the rolls. The ratio of the moment arm a to the projected length of the arc of the contact L_p can be given as:</p>
+          <p><strong>λ = a / L_p = a / √(RΔh)</strong></p>
+          <p>where λ is 0.5 for hot-rolling and 0.45 for cold rolling.</p>
+          <center>
+          <img src="Rolling\r19.jpg" alt="Two-high mill, pullover" height="300" width="350"><br>
+          &gt;
+          </center>
+                     
+          <h3 id="torque-calculation">Torque Calculation</h3>
+          <p>The torque M_T is equal to the total rolling load P multiplied by the effective moment arm a. Since there are two rolls, the torque is given by:</p>
+          <p><strong>M_T = 2Pa</strong></p>
+          <h3 id="power-calculation">Power Calculation</h3>
+          <p>During one revolution of the top roll the resultant rolling load P moves along the circumference of a circle equal to 2πa. Since there are two work rolls, the work done W is equal to:</p>
+          <p><strong>Work = 2(2πa)P</strong></p>
+          <p>Since the power is defined as the rate of doing work, i.e., 1W = 1Js⁻¹, the power (in watts) needed to operated a pair of rolls revolving at N Hz (s⁻¹) in deforming metal as it flows through the roll gap is given by:</p>
+          <p><strong>W = 4πaPN</strong></p>
+          <p>where P is in Newton and a is in meters</p>
+          <ul>
+          <li>Forces and geometrical relationships in rolling</li>
+          <li>Roll bite conditions and maximum reduction</li>
+          <li>Torque and power calculations</li>
+          </ul>
+          <p>Each section includes relevant diagrams and mathematical equations to provide a comprehensive understanding of the rolling process.</p>
+          
+          </div>
+          <div class="bug-report-mobile">
+              <bug-report id="bug-report" title="[BUG REPORT] ROLLING PROCESSES" page-type="text" context-info="{&quot;organisation&quot;:&quot;Virtual Labs&quot;,&quot;developer_institute&quot;:&quot;DLBG&quot;,&quot;expname&quot;:&quot;ROLLING PROCESSES&quot;,&quot;labname&quot;:&quot;Virtual Lab&quot;,&quot;phase&quot;:&quot;Testing&quot;}" checkbox-json="{&quot;text&quot;:[&quot;Insufficient Content&quot;],&quot;video&quot;:[&quot;Insufficient Content&quot;],&quot;assesment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;assessment&quot;:[&quot;Incorrect Options&quot;,&quot;Incorrect Answer&quot;,&quot;Incorrect Question&quot;],&quot;simulation&quot;:[&quot;Simulation Not Working&quot;,&quot;Incorrect Results/Observations&quot;,&quot;Insufficient/Incorrect Instructions&quot;],&quot;DEFAULT&quot;:[&quot;Page Not Loading&quot;,&quot;Content Not Visible&quot;,&quot;Incorrect Content&quot;]}" position="override" button_style="
+                          position: fixed; 
+                          bottom: 20px;
+                          right: 20px;
+                          z-index: 1;
+                          font-size: 0;
+                          padding: 25px;
+                          border-radius: 50%;
+                          border: none;
+                          background-color: #0fc0ff;
+                          background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAtCAYAAAA6GuKaAAAAAXNSR0IArs4c6QAABiFJREFUaEPFmVuMFEUUhv/TM7uwoBGVyG22u7ZnYGG5REETo8RA1BhFIka8ABFf0PCgDxhFEpCLqAlE1OiTiSj4gFGjD0QBETQaEqPRICALSHdPV+8YQQJBA+wuO1PHdMNcWGame2ZWqMfuc/nq1KlT1acJAzhShjFVAUsYdL8G3HjRdA7gHwna5uahLR91dnaeb9QlNWrA1+/o6GjuPnv2DQ30LICKNhk4qLF63PK8g434rejATJhjKa6m9WazOzOZzKlKTmYAcc8QnxEwJwqIAk5STpvpZJwD1eTHjR43PKflhtkZ2+ovVxbaTJiTSVM/gzCYGIebu4fc1nmi80w5J0nDWA7Qq1GACzLMR3pV7pZMJtNdTs/UzelE6msAQ0BYb7vuS6VyZaGTungGhPfygkRYZ7nusv4OEonEDc2xuEfA0JqgATBhieO6b/fXE0IM1pgPECgVvGP+x/bksFDo1JhUguPZI8FMAz0+zzFtSjqd9p8VRlJvew7E79QKHNgEDjrSndRfNyXEGmasLK4KttmeOysU2hdIGm0vA/xKUZh32VLeW6psCrGMmO+uB5qIeEh398P7jx8/m9cP9pGm9vtpmQ9WjHDzUSkPRYJOpVKDuK9vP0Dj8goMfsSR8ot6IKPoJI22XUBpEHitLWUx6heNVC15pmHMItCXBYeKPUZsLlFWVYNQsVg2nU7v82XaW1tHZ4lGhUEztOlEKOQ4A/b5XHZyuc0aWqdNIbYSY3aY00veM/9te3KE/ywlxGpmrKpJP8h5ftCR8qtyeqHQY3XdVNAO5vMskvMGoRWrT9Ke90QlX6HQF6N16Y4OI28Ampn/jatcxx+ZzJ8NQScSiZZBWvzJwAhhJoCKUQhkaoVmnAZoJcC9WowOH02nf6gWl0iRLpQk3ZwOym0n0DVVg10rNAAF7Ig1xedYltUbtpCRoZO6Po1J+z7S6VcHdLCIClusLnfBgED7NVv1ZX8lYGKYwbrSo8Qogxc4Um5pOD1Mo20DgZ+PBFxPTpcYJuBUljDRdd1jdW/EcYnEmKwWSxNR05WADnwo2mB3pV+oGzopxDowlkYGbjDSF9ILpwd1D2mtdB2uuhEv3D+yfwG4/opCB5WVnrZk+v1yfqtCJ3X9TpC2pybggYj0BYcf29KdXwe0WArCuqsCzSxtT4qq0GareStIXXo3JjxGwNSrAh0crMFFq3jYEJ9wpPygkB6mYZwg0PCaAcsp1Hm4RPFtS5eK0LpxvqayVs3DlYIO7r0K8xUhlufRGKNrupLmFQcImsEZBhWaOxq4y5ZyRvXqIcSnYDwaZdkukRkgaGqK32RZ1on+/qt/buliFRFWXxXokonXBJ3S22Yz8darAc2sdjqed1/NddpvnMQUHwPRdTWBD0R6EBbbrltoGJX6D71PJ3V9E0h76kpCMzirNTWNLpfPPkcodNDXi6m9QLGqhE6gwUgzaKMj04sq+QmF9hVrjnYj0IwejmvtjuN4DUEbhjEqztgLoqCXEToagQavsKV8rZqPSJH2DaSEmMGMXZHSpE5oZnzneK7fL8w1DJ1sTU6CltvEwPj/88OWwRYx77Y9b3HD0KYuvqUL/Y5oo85I542TooesrnTF8yE0PUwh5hGj6tfxZTNpEBqKvUE9QyfW9bnV3t5+bV9P7yECxuTBFGOvRn5v5eJgTLzsUhUFmuGCcLJoBiNL/ZT7bVFYiWrrnTSM9QC9WBSmzy2ZnluqI4QYGQcWM/O8Qi+7EjSjB4xtTNqHjuf4HVHO20q1tiZZi/k/j1r8Z8zcRxyfanfZv/dnrJgeYw1jQo6xr+SOfY5j2oRq9VMIIWLA7QSMslz3raDGG8ZMJhoPpR1QmvrFdd2eSoFKGm0rAF5bfM97bCnvKp2c/64idFLXd4C0woWFwMstKV+PthPrk/L/R/aeOfcbCBOKq8uLLCk3llos/0tON+8hUt+U5O1Rao5PjtIcrA+3qOWvDEC78wFlIO1I1wyFTuptC0G8uWSZHrCl3N4oUFT9NiE2a4yFQW6DLUfKsaHQU0aMGHq2pWULM98Bpncdzy35yxXVdf1yftXK9vS8CUVjtBjWHHXdn0qt/Qf/x1JblU8EiAAAAABJRU5ErkJggg==);
+                          background-repeat: no-repeat;
+                          background-position: center;
+                          background-size: 30px;
+                          filter: invert(1);">
+              </bug-report>
+          </div>        </div>
+      </div>
+      <footer class="text-light pt-2 vlabs-footer d-flex flex-column">
+        <div class="row px-5 mx-0">
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Community Links</span>
+            <a href="https://www.sakshat.ac.in/" class="text-light">Sakshat Portal</a>
+            <a href="http://outreach.vlabs.ac.in/" class="text-light">Outreach Portal</a>
+            <a href="https://vlab.co.in/faq" class="text-light">FAQ: Virtual Labs</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Contact Us</span>
+            <span> Phone: General Information: 011-26582050 </span>
+            <span> Email: support@vlabs.ac.in </span>
+          </div>
+          <div class="col d-flex flex-column">
+            <span class="font-weight-bold vlabs-footer-sect-name pb-2 mb-3">Follow Us</span>
+            <div class="social-links">
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #55acee;" href="https://twitter.com/TheVirtualLabs">
+      	  <i class="fab fa-twitter"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #3b5998;" href="https://www.facebook.com/Virtual-Labs-IIT-Delhi-301510159983871/">
+      	  <i class="fab fa-facebook"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #e52d27;" href="https://www.youtube.com/watch?v=asxRaOgk6a0">
+      	  <i class="fab fa-youtube"></i>
+      	</a>
+      	<a class="p-2 mt-1 mr-2 d-inline-flex justify-content-center align-items-center" style="background: #2867B2;" href="https://in.linkedin.com/in/virtual-labs-008ba9136">
+      	  <i class="fab fa-linkedin"></i>
+      	</a>
+            </div>
+          </div>
+        </div>
+        <div class="m-0 py-2 text-center" style="font-family: &quot;Open Sans&quot;, sans-serif; background: #212121;">
+          <a class="text-primary font-weight-bold" href="https://www.gnu.org/licenses/agpl-3.0.en.html"> AGPL 3.0 </a>
+          &nbsp;&amp;&nbsp;
+          <a class="text-primary font-weight-bold" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons (CC BY-NC-SA 4.0) </a>
+        </div>
+      </footer>
+    <script src="./assets/js/toggleSidebar.js"></script>
+    <script src="./assets/js/event-handler.js"></script>
+
+
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register("sw.js");
+        });
+      }
+    </script>
+  
+
+<script type="module" src="https://cdn.vlabs.ac.in/bug-report/vlabs-bug-report.js"></script><script type="module" src="/exp-rolling-processes-dei/plugins/svc-rating/index.js"></script><script type="module" src="/exp-rolling-processes-dei/plugins/svc-rating/config.js"></script><script type="module" src="https://apis.google.com/js/api.js"></script></body></html>
